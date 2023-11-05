@@ -3,6 +3,11 @@ import { Navigate, Outlet, Link } from 'react-router-dom'
 import { useStateContext } from '../contexts/ContextProvider'
 import { useEffect } from 'react'
 import axiosClient from '../axios-client'
+import HomeIcon from '@mui/icons-material/Home';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 
 export default function DefaultLayout() {
   const {user, token, setUser, setToken, notification} = useStateContext();
@@ -31,17 +36,41 @@ export default function DefaultLayout() {
   return (
     <div id="defaultLayout">
       <aside>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/users">Users</Link>
+      <Link to="/dashboard">
+        <div className="icon-text-container">
+          <HomeIcon />
+          <span>Home</span>
+        </div>
+      </Link>
+
+      <Link to="/books">
+        <div className="icon-text-container">
+          <LibraryBooksIcon />
+          <span>Books</span>
+        </div>
+      </Link>
+
+      <Link to="/notifications">
+        <div className="icon-text-container">
+          <NotificationsActiveIcon />
+          <span>Notifications</span>
+        </div>
+      </Link>
+      
+      <Link to="/profile">
+        <div className="icon-text-container">
+          <AccountCircleRoundedIcon />
+          <span>Profile</span>
+        </div>
+      </Link>
       </aside>
       <div className="content">
         <header>
-          <div>
-            Header
+          <div className='username-container'>
+          {user.name} &nbsp; &nbsp;
           </div>
 
           <div>
-            {user.name} &nbsp; &nbsp;
             <a onClick={onLogout} className="btn-logout" href="#">Logout</a>
           </div>
         </header>

@@ -77,7 +77,7 @@ input:focus {
 .btn-logout {
     text-decoration: none;
     padding: 0.75rem 1.5rem;
-    color: #212121;
+    color: #ffffff;
     transition: all 0.3s;
     border-radius: 6px;
 }
@@ -188,8 +188,8 @@ table > tbody > tr > td {
 }
 
 #defaultLayout aside {
-    width: 240px;
-    background-color: #5b08a7;
+    width: 130px;
+    background-color: #2C64C6;
     padding: 1rem
 }
 
@@ -208,12 +208,14 @@ table > tbody > tr > td {
 
 #defaultLayout .content {
     flex: 1;
+    color: white;
+    font-weight: bold;
 }
 
 #defaultLayout header {
     height: 80px;
     padding: 2rem 0; /* Reduced left and right padding to 0 */
-    background-color: white;
+    background-color: #2A5890;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
@@ -242,7 +244,7 @@ table > tbody > tr > td {
     font-size: 20apx;
     padding-top: 100;
     text-align: center;
-    margin: 15px 0 0;
+    margin: 15px 0;
 }
 
 @keyframes fadeInDown {
@@ -255,3 +257,252 @@ table > tbody > tr > td {
         transform: translateY(0);
     }
 }
+.username-container {
+    font-size: x-large;
+    margin-left: 20px; 
+  }
+.icon-text-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.icon-text-container > svg {
+/* Add any additional styling for the icon if needed */
+margin-bottom: 4px; /* Adjust as needed to control the space between icon and text */
+}
+/* Add these styles to your CSS or SASS file */
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+.search-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    height: 50px;
+    align-items: right;
+}
+  
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+  
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+  
+.category {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+  
+.category:hover {
+    background-color: #e0e0e0;
+}
+  
+.category-icon {
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(54, 72, 144);
+}
+.categories-heading {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Books component */
+.books-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+  
+.books-heading {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+}
+  
+.book-category {
+    width: 20%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+  
+.book-category:hover {
+    background-color: #3e397e;
+}
+  
+.book-info {
+    font-weight: normal;
+    color: black;
+}
+.books-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Adjust the alignment as needed */
+    gap: 10px; /* Adjust the gap between books */
+  }
+  
+  .book-category {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: left;
+    width: 20%; /* Adjust the width to control the number of books per row */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+
+  /* Notification CSS */
+  .notification-container {
+    text-align: left;
+    margin: 20px;
+  }
+  
+  .notification-heading {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .notification-box {
+    width: 100%;
+    padding: 10px;
+    background-color: #2661c1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-box p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .btn-dismiss {
+    outline: 0;
+    background: #2470b7;
+    border: 0;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .btn-dismiss:hover {
+    background-color: #6292b0;
+  }
+
+  /* Profile CSS */
+
+  /* Profile Component */
+.profile-container {
+    background-color: #2688dd;
+    border: 1px solid #2688dd;
+    border-radius: 4px;
+    padding: 20px;  
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .profile-heading {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .profile-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .avatar-placeholder {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .user-info p {
+    margin: 0;
+    color: #666;
+  }
+
+  .profile-box {
+    width: 100%;
+    background-color: #2A5890;
+    border: 1px solid #2688dd;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .profile-box:hover {
+    background-color: #2A5890;
+    border: 1px solid #2A5890;
+  }
+  .icon-text-container-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-text-container-profile svg {
+    font-size: 18px;
+    vertical-align: middle; /* Align the icon vertically to the middle of the text */
+    margin-right: 10px;
+  }
+  
+  
+  
+  
+  
