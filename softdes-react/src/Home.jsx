@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import EngineeringRoundedIcon from '@mui/icons-material/EngineeringRounded';
-import PsychologyAltRoundedIcon from '@mui/icons-material/PsychologyAltRounded';
-import ScienceRoundedIcon from '@mui/icons-material/ScienceRounded';
-import BloodtypeRoundedIcon from '@mui/icons-material/BloodtypeRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
 import { Category } from './assets/Category';
 
 export default function Dashboard() {
 const [search, setSearch] = useState('')
+
 
   return (
     <div>

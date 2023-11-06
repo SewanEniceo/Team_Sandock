@@ -37,7 +37,7 @@ export default function Signup() {
     <div className="login-signup-form animated fadeInDown">
       <div className="form">
         <form onSubmit={onSubmit}>
-          <h1 className="title">PACEbook</h1>
+          <h1 className="title">PGSCE Library and Resources</h1>
           <p className="text-per">Just one step you can browse and lend books easily</p>
           {errors &&
             <div className="alert">
