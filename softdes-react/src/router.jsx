@@ -10,7 +10,6 @@ import Dashboard from "./Home";
 import Books from "./pages/Books";
 import Notification from "./pages/Notifications";
 import Profile from "./pages/Profile";
-import EditProfile from "./pages/EditProfile";
 
 const router = createBrowserRouter([
     {
@@ -41,18 +40,6 @@ const router = createBrowserRouter([
                 path: '/profile',
                 element: <Profile/>
             },
-            {
-                path: '/updateprofile',
-                element: <EditProfile/>
-            },
-            {
-                path: '/about',
-                element: <Profile/>
-            },
-            {
-                path: '/profile',
-                element: <Profile/>
-            }
         ]
     },
     {
