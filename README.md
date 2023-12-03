@@ -7,5 +7,5 @@
 Eniceo, Sean Paolo <br>
 Dino, Nicol Rosac <br>
 Jayme, Karla Marie <br>
-Jaraula, Christian Byron
+
 
